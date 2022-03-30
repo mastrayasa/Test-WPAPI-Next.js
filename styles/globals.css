@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+html, body { 
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+@media (min-width:768px) {
+    body { 
+        background-color: #fafafa;
+    }
+}
+
+a{
+    @apply text-blue-500
+}
+a:hover{
+    @apply text-blue-600 underline
+}
+
+.post-title{
+    @apply text-blue-600 text-xl  mb-4 font-bold
+}
+
+p{
+    @apply mb-2
+}
+ 
+
+ 
