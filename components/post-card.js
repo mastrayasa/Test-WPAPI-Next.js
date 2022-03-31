@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function PostCard(props) {
 
      
-  return (<div className="m-4 px-4 py-2 shadow-sm rounded-bl rounded-tl rounded-tr-3xl">
+  return (<div className="px-4 py-3 shadow-sm ">
   <div className="leading-none">
       <p className="mb-1 font-bold">
       
@@ -15,7 +15,7 @@ export default function PostCard(props) {
       </p>
       <p className="my-1 italic text-xs text-gray-500">{props.post.date}</p>
   </div>
-  <div className="text-gray-700 text-sm italic leading-1" dangerouslySetInnerHTML={{ __html: props.post.excerpt.rendered }} /> 
+  <div className="text-gray-700 text-sm  leading-1" dangerouslySetInnerHTML={{ __html: props.post.excerpt.rendered }} /> 
   
 </div>);
 }

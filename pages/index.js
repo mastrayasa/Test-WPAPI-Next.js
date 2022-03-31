@@ -1,7 +1,10 @@
 import React from "react" 
+import {  useEffect,useState } from 'react'; 
 import Wrapper from '../components/wrapper'  
 import Loop from '../components/post-loop'  
-import Footer from '../components/footer'  
+import Footer from '../components/footer' 
+import Header from '../components/header' 
+import Categories from '../components/categories' 
 import wp from '../lib/wp'
 import Head from 'next/head'; 
 export default function Home(props) {
@@ -11,8 +14,15 @@ export default function Home(props) {
             <Head>
                 <title>Wordpress Api</title>
             </Head>
+
+            <Header />
+
+            <div className="p-4 border-b">
+                <Categories />
+            </div>
+
             <div className="overflow-x-auto min-h-full">
-                <Loop posts={props.posts} /> 
+                <Loop posts={props.posts} />
             </div> 
             <Footer />
         </Wrapper>

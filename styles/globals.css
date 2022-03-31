@@ -20,6 +20,10 @@ a:hover{
     @apply text-blue-600 underline
 }
 
+.page-title{
+    @apply text-blue-600 text-xl font-bold
+}
+
 .post-title{
     @apply text-blue-600 text-xl  mb-4 font-bold
 }
@@ -27,6 +31,18 @@ a:hover{
 p{
     @apply mb-2
 }
+
+.main-menu{
+    @apply flex items-center space-x-2;
+}
+ 
+.main-menu li a{
+    @apply px-4 py-1 bg-white shadow rounded-xl no-underline;
+}
+.main-menu li a:hover{
+    @apply bg-gray-100;
+}
+ 
  
 
  

@@ -1,10 +1,11 @@
 import React from "react" 
 import Wrapper from '../../components/wrapper'    
 import Footer from '../../components/footer'  
+import Header from '../../components/header'  
 import wp from '../../lib/wp'
 import Head from 'next/head'; 
 import Error from 'next/error'
-export default function Home(props) {
+export default function Slug(props) {
 
     console.log(props.post)
     
@@ -19,6 +20,7 @@ export default function Home(props) {
             <Head>
                 <title>{post.title.rendered}</title>
             </Head>
+            <Header />
             <div className="overflow-x-auto min-h-full p-4">
                  <h1 className="post-title">{post.title.rendered}</h1>
                  
